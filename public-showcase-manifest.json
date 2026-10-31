@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "publisher": "OSYSTIC",
+  "artifact_type": "sanitized-engineering-case-study",
+  "project_key": "quotex-otc-telegram-alert-bot",
+  "status": "published",
+  "project_completion_status": "completed",
+  "completion_date": "2026-10-31",
+  "source_code_included": false,
+  "client_identity_included": false,
+  "private_evidence_included": false,
+  "account_identifiers_included": false,
+  "commercial_information_included": false,
+  "independent_git_history": true,
+  "website": {
+    "eligible": true,
+    "status": "ready-for-review",
+    "canonical_slug": "quotex-otc-telegram-alert-bot"
+  }
+}

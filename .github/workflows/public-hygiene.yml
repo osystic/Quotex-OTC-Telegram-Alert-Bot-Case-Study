@@ -1,0 +1,12 @@
+name: Public case-study hygiene
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate sanitized publication boundary
+        run: python3 scripts/validate_public.py
