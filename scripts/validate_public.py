@@ -11,7 +11,7 @@ allowed = {
     "README.md", "case-study.md", "SECURITY.md", "NOTICE.md", ".gitignore",
     "public-showcase-manifest.json",
     "docs/architecture.md", "docs/verification.md", "docs/completion.md",
-    "assets/otc-alert-architecture.svg",
+    "assets/otc-alert-architecture.svg", "assets/otc-alert-architecture.png",
     "scripts/validate_public.py",
 }
 found = {str(p.relative_to(root)) for p in root.rglob("*") if p.is_file() and ".git" not in p.parts}
@@ -24,6 +24,11 @@ assert meta["publisher"] == "OSYSTIC" and meta["project_completion_status"] == "
 assert meta["source_code_included"] is False and meta["client_identity_included"] is False
 for file in found:
     if file == "scripts/validate_public.py":
+        continue
+    if file == "assets/otc-alert-architecture.png":
+        image = (root / file).read_bytes()
+        assert image.startswith(bytes((137, 80, 78, 71, 13, 10, 26, 10))), "Invalid PNG signature"
+        assert 0 < len(image) <= 5 * 1024 * 1024, "Cover exceeds the allowed public size"
         continue
     content = (root / file).read_text()
     for regex in [

@@ -37,4 +37,8 @@ website:
   eligible: true
   status: ready-for-review
   canonical_slug: quotex-otc-telegram-alert-bot
+  cover:
+    path: assets/otc-alert-architecture.png
+    kind: illustration
+    alt: Conceptual diagram of five closed OTC market candles triggering separate Telegram text and chart notifications.
   auto_sync: true
