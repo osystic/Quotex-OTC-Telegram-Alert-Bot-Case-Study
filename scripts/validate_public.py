@@ -11,6 +11,7 @@ allowed = {
     "README.md", "case-study.md", "SECURITY.md", "NOTICE.md", ".gitignore",
     "public-showcase-manifest.json",
     "docs/architecture.md", "docs/verification.md", "docs/completion.md",
+    "assets/otc-alert-architecture.svg",
     "scripts/validate_public.py",
 }
 found = {str(p.relative_to(root)) for p in root.rglob("*") if p.is_file() and ".git" not in p.parts}

@@ -19,6 +19,20 @@
 | Live acceptance | Working text alerts and chart images demonstrated; client confirmed completion |
 | Status | **Client engagement completed**; long-term broker reconnection limitations documented |
 
+## Executive summary
+
+OSYSTIC delivered a read-only browser-observation and Windows-local Telegram alert workflow for OTC instruments. A signal is eligible only after five consecutive, fully closed one-minute candles agree in direction. The system sends a text alert first and a separately rendered OHLC chart afterwards. This case study documents verified test windows and known feed-recovery constraints, rather than claims of trading profitability or uninterrupted availability.
+
+## Ownership and handover
+
+The completed delivery was handed over for operation on the client's Windows environment, with the Chrome observer, local relay, startup helper, installation guidance and agreed maintenance support. Browser login/session availability and Telegram configuration remain under client control. This public repository is a sanitized documentation-only showcase, not a deployment package or source-code handover.
+
+## Visual architecture
+
+![Conceptual OTC monitoring and notification architecture](assets/otc-alert-architecture.svg)
+
+*Editorial architecture illustration. Not a broker screenshot, market-data capture, or independent proof of trading performance.*
+
 ## The challenge
 
 Continuously observe a changing catalogue of broker OTC instruments on an ordinary Windows PC. For each symbol, detect an event only after **five genuine, consecutively closed one-minute candles** share the same direction. Deliver the result to Telegram quickly without combining the chart upload with the initial notification.

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">OTC five-candle alert architecture</title><desc id="desc">Concept illustration of a read-only OTC feed, closed candle validation and separate Telegram text and chart deliveries. Not a product screenshot.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#060b14"/><stop offset="1" stop-color="#12213a"/></linearGradient><linearGradient id="bar" x2="0" y2="1"><stop stop-color="#76c1ff"/><stop offset="1" stop-color="#2358d1"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g stroke="#244065" stroke-width="1" opacity=".42"><path d="M0 150h1600M0 300h1600M0 450h1600M0 600h1600M0 750h1600M200 0v900M400 0v900M600 0v900M800 0v900M1000 0v900M1200 0v900M1400 0v900"/></g>
+<text x="88" y="115" font-family="sans-serif" font-size="28" font-weight="700" letter-spacing="5" fill="#a4caff">OSYSTIC / ENGINEERING</text>
+<text x="88" y="182" font-family="sans-serif" font-size="54" font-weight="650" fill="#f2f7ff">Closed-candle observation</text>
+<text x="88" y="225" font-family="sans-serif" font-size="22" fill="#afc3dd">Conceptual event pipeline • OTC M1 • Read-only</text>
+<rect x="85" y="300" width="820" height="410" rx="30" fill="#0e2037" stroke="#38669c" stroke-width="2"/>
+<text x="135" y="366" font-family="sans-serif" font-size="23" letter-spacing="3" fill="#a5cfff">FIVE COMPLETE M1 CANDLES</text>
+<g stroke="#8bd8bb" stroke-width="5" fill="#55c9a1"><path d="M185 466v130M326 432v135M467 460v132M608 410v165M749 425v145"/><rect x="158" y="495" width="54" height="72" rx="5"/><rect x="299" y="469" width="54" height="70" rx="5"/><rect x="440" y="487" width="54" height="72" rx="5"/><rect x="581" y="443" width="54" height="82" rx="5"/><rect x="722" y="455" width="54" height="80" rx="5"/></g>
+<path d="M933 507h105" stroke="#80baff" stroke-width="11" stroke-linecap="round"/><path d="m1010 477 40 30-40 30" fill="none" stroke="#80baff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1070" y="316" width="444" height="160" rx="23" fill="#122f4d" stroke="#5e9cf0" stroke-width="3"/>
+<text x="1110" y="377" font-family="sans-serif" font-size="23" fill="#c8dcf3">TELEGRAM / TEXT</text><text x="1110" y="423" font-family="sans-serif" font-size="31" font-weight="700" fill="#f1f7ff">Signal notification</text>
+<rect x="1070" y="528" width="444" height="160" rx="23" fill="#122f4d" stroke="#5e9cf0" stroke-width="3"/>
+<text x="1110" y="590" font-family="sans-serif" font-size="23" fill="#c8dcf3">TELEGRAM / IMAGE</text><text x="1110" y="636" font-family="sans-serif" font-size="31" font-weight="700" fill="#f1f7ff">Separate OHLC chart</text>
+<text x="90" y="818" font-family="sans-serif" font-size="20" fill="#9fb4cc">Concept illustration only — no live feed, screenshots, or performance guarantees depicted.</text>
+</svg>

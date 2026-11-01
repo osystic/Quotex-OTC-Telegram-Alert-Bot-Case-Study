@@ -4,6 +4,14 @@
 **Project status:** Completed (client delivery, 2026-10-31)  
 **Document classification:** Sanitized public proof / not client-delivery software
 
+## Executive summary
+
+A completed Windows-based, read-only OTC observation workflow validates five contiguous closed M1 candles and dispatches Telegram text and chart notifications via separate paths. This case study distinguishes observed delivery from unverified continuous uptime or trading results.
+
+## Ownership and handover
+
+OSYSTIC delivered the client-side browser observer, Windows local relay and startup utilities with installation assistance, troubleshooting and support terms. The client's browser login, Windows machine and Telegram destinations remain client-controlled. This public record intentionally excludes the proprietary implementation and credentials.
+
 ## Overview
 
 A client wanted an alert-only workflow that could monitor the OTC markets available in their Quotex browser session. When five consecutive, completed M1 candles were all green or all red, the workflow needed to send a Telegram text alert followed by a distinct chart image.
